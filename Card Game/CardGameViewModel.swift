@@ -16,7 +16,7 @@ class MemoryGameViewModel: ObservableObject{
     
     // swift can never infer a return type
     private static func createMemoryGame() -> MemoryGame<String>{
-        return MemoryGame(numberOfPairs: 10){ pairIndex in
+        return MemoryGame(numberOfPairs: 6){ pairIndex in
             if emojis.indices.contains(pairIndex){
                 return emojis[pairIndex]
             } else {
